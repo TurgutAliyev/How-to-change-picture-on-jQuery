@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            height: 500px;
+            width: 700px;
+            margin: 50px auto;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 0px 15px #333;
+        }
+
+        .container .images {
+            height: calc(20% - 5px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+        }
+
+        .container .images img {
+            height: 100%;
+            width: calc(20% - 5px);
+            object-fit: cover;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+
+        .container .first {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .first img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="first">
+            <img src="img2.jpg">
+        </div>
+        <div class="images">
+            <img src="img1.jpg">
+            <img src="img2.jpg">
+            <img src="img3.jpg">
+            <img src="img4.jpg">
+            <img src="img5.jpg">
+        </div>
+    </div>
+    <div id="goster"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
